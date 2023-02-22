@@ -1,0 +1,13 @@
+.friendsFriend {
+    @include flex(center, unset, row, unset);
+    width: fit-content;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.friendsFriendImg {
+    @include widthHeight(32px, 32px);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}

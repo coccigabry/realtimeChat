@@ -1,0 +1,92 @@
+.rightSidebar {
+    flex: 3.5;
+}
+
+.rightSidebarWrapper {
+    padding: 20px 20px 0 0;
+}
+
+
+// -------------- HOMEPAGE SIDEBAR -------------- //
+
+.birthdayContainer {
+    @include flex(center, unset, row, unset);
+}
+
+.birthdayImg {
+    @include widthHeight(40px, 40px);
+    margin-right: 10px;
+}
+
+.birthdayText {
+    @include font(15px, 300, #000);
+}
+
+.rightSidebarAd {
+    @include widthHeight(100%, auto);
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.rightSidebarHomepageTitle {
+  margin-bottom: 20px;  
+}
+
+.rightSidebarList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+// -------------- PROFILE SIDEBAR -------------- //
+
+.rightSidebarFollowBtn {
+    @include font(16px, 500, #fff);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: $coccibook-blue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rightSidebarProfileTitle {
+    @include font(18px, 500, #000);
+    margin-bottom: 10px;
+}
+
+.rightSidebarInfo {
+    margin-bottom: 30px;
+}
+
+.rightSidebarInfoItem {
+    margin-bottom: 10px;
+}
+
+.rightSidebarInfoKey {
+    @include font(unset, 500, #000);    
+    margin-right: 15px;
+}
+
+.rightSidebarInfoValue {
+    font-weight: 300;
+}
+
+.rightSidebarFollowings {
+    @include flex(unset, space-between, row, unset);
+    flex-wrap: wrap;
+}
+
+.rightSidebarFollowing {
+    @include flex(unset, unset, column, unset);
+}
+
+.rightSidebarFollowingImg {
+    @include widthHeight(100px, 100px);
+    border-radius: 5px;
+    object-fit: cover;
+}

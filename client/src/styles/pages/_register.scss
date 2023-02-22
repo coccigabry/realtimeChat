@@ -1,0 +1,67 @@
+.register {
+    @include widthHeight(100vw, 100vh);
+    @include flex(center, center, row, unset);
+    background-color: #f0f2f5;
+}
+
+.registerWrapper {
+    @include widthHeight(70%, 70%);
+    display: flex;
+}
+
+.registerLeft,
+.registerRight {
+    flex: 1;
+    @include flex(unset, center, column, unset);
+
+}
+
+.registerLogo {
+    @include font(50px, 800, $coccibook-blue);
+    margin-bottom: 10px;
+}
+
+.registerDesc {
+    font-size: 24px;
+}
+
+.registerBox {
+    @include flex(unset, space-between, column, unset);
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.registerInput {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.registerButton,
+.registerRegisterButton {
+    @include font(20px, 500, #fff);
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: $coccibook-blue;
+    cursor: pointer;
+
+    &.registerRegisterButton {
+        @include widthHeight(60%, 50px);
+        background-color: $coccibook-green;
+        align-self: center;
+    }
+}
+
+.registerForgot {
+    text-align: center;
+    color: $coccibook-blue;
+}

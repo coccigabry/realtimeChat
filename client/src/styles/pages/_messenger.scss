@@ -1,0 +1,70 @@
+.messenger {
+    height: calc(100vh - 50px);
+    display: flex;
+}
+
+.chatMenu {
+    flex: 3.5;
+}
+
+.chatBox {
+    flex: 5.5;
+}
+
+.chatOnline {
+    flex: 3;
+}
+
+.chatMenuWrapper, 
+.chatBoxWrapper, 
+.chatOnlineWrapper {
+    padding: 10px;
+    height: 97%;
+}
+
+.chatMenuInput {
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.chatBoxWrapper {
+    @include flex(unset, space-between, column, unset);
+    position: relative;
+}
+
+.chatBoxTop {
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 10px;
+}
+
+.chatBoxBottom {
+    @include flex(center, space-between, row, unset);
+    margin-top: 5px;
+}
+
+.chatBoxInput {
+    @include widthHeight(80%, 90px);
+    padding: 10px;
+}
+
+.chatBoxButton {
+    @include widthHeight(70px, 40px);
+    border: none;
+    border-radius: 5px;
+    background-color: $coccibook-green;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chatBoxNoConversation {
+    @include positionAbsolute(20%, unset, unset, unset);
+    @include font(30px, 500, lightgrey);
+    cursor: default;
+}

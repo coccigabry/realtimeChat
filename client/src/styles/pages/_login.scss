@@ -1,0 +1,73 @@
+.login {
+    @include widthHeight(100vw, 100vh);
+    @include flex(center, center, row, unset);
+    background-color: #f0f2f5;
+}
+
+.loginWrapper {
+    @include widthHeight(70%, 70%);
+    display: flex;
+}
+
+.loginLeft,
+.loginRight {
+    flex: 1;
+    @include flex(unset, center, column, unset);
+
+}
+
+.loginLogo {
+    @include font(50px, 800, $coccibook-blue);
+    margin-bottom: 10px;
+}
+
+.loginDesc {
+    font-size: 24px;
+}
+
+.loginBox {
+    @include flex(unset, space-between, column, unset);
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.loginInput {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+    padding-left: 20px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.loginButton,
+.loginRegisterButton {
+    @include font(20px, 500, #fff);
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: $coccibook-blue;
+    cursor: pointer;
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &.loginRegisterButton {
+        @include widthHeight(60%, 50px);
+        @include flex(center, center, unset, unset);
+        background-color: $coccibook-green;
+        align-self: center ;
+        text-align: center;
+    }
+}
+
+.loginForgot {
+    text-align: center;
+    color: $coccibook-blue;
+}

@@ -1,0 +1,25 @@
+.onlineFriend {
+    @include flex(center, unset, row, unset);
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.onlineFriendImgContainer {
+    position: relative;
+    margin-right: 10px;
+}
+
+.onlineFriendImg {
+    @include widthHeight(32px, 32px);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.onlineFriendBadge {
+    @include widthHeight(10px, 10px);
+    @include positionAbsolute(0, 0, unset, unset);
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: $coccibook-green;
+}

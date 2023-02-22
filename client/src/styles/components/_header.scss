@@ -1,0 +1,79 @@
+.headerContainer {
+    @include widthHeight(100%, 50px);
+    @include flex(center, unset, row, unset);
+    background-color: $coccibook-blue;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.headerLeft {
+    flex: 3;
+}
+
+.logo {
+    @include font(24px, bold, #fff);
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.headerCenter {
+    flex: 5;
+}
+
+.searchbar {
+    @include widthHeight(100%, 30px);
+    @include flex(center, unset, row, unset);
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.searchIcon {
+    @include font(16px, unset, #000);
+    padding: 0 7px;
+}
+
+.searchInput {
+    @include widthHeight(70%, auto);
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.headerRight {
+    @include flex(center, space-around, row, unset);
+    color: #fff;
+    flex: 4;
+}
+
+.headerIcons {
+    display: flex;
+}
+
+.headerIconItem {
+    position: relative;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.iconItem {
+    font-size: 22px;
+}
+
+.headerIconBadge {
+    @include widthHeight(15px, 15px);
+    @include flex(center, center, row, unset);
+    @include positionAbsolute(-5px, -5px, unset, unset);
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: $coccibook-alert;
+} 
+
+.headerImg {
+    @include widthHeight(32px, 32px);
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+} 

@@ -1,0 +1,27 @@
+.onlineFriendItem {
+    @include flex(center, unset, row, unset);
+    margin-bottom: 15px;
+}
+
+.onlineProfileImgContainer {
+    margin-right: 10px;
+    position: relative;
+}
+
+.onlineProfileImg {
+    @include widthHeight(40px, 40px);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.onlineOnline {
+    @include widthHeight(12px, 12px);
+    @include positionAbsolute (unset, -5px, 5px, unset);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: green;
+}
+
+.onlineUsername {
+    font-weight: 500;
+}

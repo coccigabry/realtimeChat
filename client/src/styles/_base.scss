@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    @include flex(center, unset, row, unset);
+    text-decoration: none;
+    color: black;
+}

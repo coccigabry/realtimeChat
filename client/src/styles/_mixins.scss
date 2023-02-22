@@ -1,0 +1,26 @@
+@mixin flex ($align, $justify, $direction, $gap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin widthHeight ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin font ($fontSize, $fontWeight, $color) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+}
+
+@mixin positionAbsolute ($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
