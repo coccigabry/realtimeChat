@@ -41,7 +41,7 @@ Before running the project, ensure you have installed:
 
 bash   
    
-    git clone https://github.com/coccigabry/realTimeChat.git   cd realTimeChat
+    git clone https://github.com/coccigabry/realTimeChat.git && cd realTimeChat
  
 2. Install dependencies for both frontend and backend:
 
